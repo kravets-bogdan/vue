@@ -9,6 +9,14 @@
 </template>
 
 <style scoped lang="scss">
+@import "../styles/media";
+
+h1 {
+  align-items: center;
+  font-size: 22px;
+  display: flex;
+}
+
 header {
   justify-content: space-between;
   background-color: silver;
@@ -28,13 +36,19 @@ a {
   background-color: white;
   text-transform: uppercase;
   text-decoration: none;
+  align-items: center;
   border-radius: 5px;
   margin-right: 15px;
   color: #333;
+  display: flex;
   padding: 5px;
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @include media("<=tablet") {
+    font-size: 12px;
   }
 }
 </style>

@@ -191,7 +191,9 @@ export default {
   .buttons {
     flex-direction: column;
     align-items: flex-end;
+    font-size: 12px;
     display: flex;
+    padding: 3px;
   }
 
   .button-green {

@@ -72,6 +72,7 @@ export default {
 
     selectCity(city) {
       this.searchText = city.name;
+      this.$emit("selectedCity", city);
     },
 
     addWeatherBlock() {
